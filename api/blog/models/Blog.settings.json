@@ -1,0 +1,55 @@
+{
+  "connection": "default",
+  "collectionName": "blog",
+  "info": {
+    "name": "blog",
+    "description": "bloglar"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "content": {
+      "default": "",
+      "type": "text"
+    },
+    "user": {
+      "model": "user",
+      "plugin": "users-permissions"
+    },
+    "createdAt": {
+      "default": "",
+      "type": "date"
+    },
+    "updatedAt": {
+      "default": "",
+      "type": "date"
+    },
+    "active": {
+      "default": false,
+      "type": "boolean"
+    },
+    "type": {
+      "default": "",
+      "type": "string"
+    },
+    "short": {
+      "default": "",
+      "type": "text"
+    },
+    "sef": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

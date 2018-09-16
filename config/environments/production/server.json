@@ -1,0 +1,13 @@
+{
+  "host": "api.sefasaiddeniz.com",
+  "port": "${process.env.PORT || 1337}",
+  "proxy": {
+    "enabled": false
+  },
+  "autoReload": {
+    "enabled": false
+  },
+  "cron": {
+    "enabled": false
+  }
+}
